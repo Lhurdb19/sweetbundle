@@ -1,0 +1,1066 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    padding: 10px 100px;
+    gap: 20px;
+    background-color: lightgray;
+}
+
+.logo {
+    width: 50%;
+}
+.logo > a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    font-size: 2.5rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar > ul:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+.navbar > ul:nth-child(1) > li > a {
+    width: 100%;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.navbar > ul:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+ul:nth-child(2) > li > a {
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.handburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+
+.handburger > .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width:650px) {
+    .nav-container {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .nav-container > .logo {
+        margin: 0%;
+    }
+
+    .logo > a {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        padding: 5px;
+        gap: 30px;
+        top: 0px;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+    }
+
+    .navbar > ul:nth-child(1) {
+        flex-direction: column;
+        margin-left: 0%;
+        gap: 30px;
+    }
+    
+    .navbar > ul:nth-child(1) > li > a { 
+        font-size: 1rem;
+        color: black;
+    }
+
+    .navbar > ul:nth-child(2) {
+        flex-direction: column;
+        margin-left: 0%;
+        gap: 30px;
+    }
+
+
+    .navbar > ul:nth-child(2) > li > a { 
+        font-size: 1rem;
+        color: black;
+    }
+
+    .navbar.active {
+        left: 0%;
+    }
+
+    .handburger {
+        display: block;
+    }
+
+    .handburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .handburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .handburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-container {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .nav-container > .logo {
+        margin: 0%;
+    }
+
+    .logo > a {
+        font-size: 1.5rem;
+    }
+
+
+    .navbar {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        flex-direction: column;
+        padding: 5px;
+        gap: 30px;
+        top: 0px;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+    }
+
+    .navbar > ul:nth-child(1) {
+        flex-direction: column;
+        margin-left: 0%;
+        gap: 30px;
+    }
+    
+    .navbar > ul:nth-child(1) > li > a { 
+        font-size: 1rem;
+        color: black;
+    }
+
+    .navbar > ul:nth-child(2) {
+        flex-direction: column;
+        margin-left: 0%;
+        gap: 30px;
+    }
+
+
+    .navbar > ul:nth-child(2) > li > a { 
+        font-size: 1rem;
+        color: black;
+    }
+
+    .navbar.active {
+        left: 0%;
+    }
+
+    .handburger {
+        display: block;
+    }
+
+    .handburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .handburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .handburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+}
+
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    gap: 200px;
+    background-color: whitesmoke;
+}
+@media screen and (max-width:650px) {
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+.about-page {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 100px;
+}
+
+.about-page > .about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about > h2 {
+    font-size: 2rem;
+}
+.about > p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width:650px) {
+    .about-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+        gap: 10px;
+    }
+    .about-page > .about {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about > h2 {
+        font-size: 1.3rem;
+    }
+    .about > p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+        gap: 10px;
+    }
+    .about-page > .about {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about > h2 {
+        font-size: 1.3rem;
+    }
+    .about > p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.about-page > .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+.about-page > .image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+@media screen and (max-width:650px) {
+    .about-page > .image {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-page > .image {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+
+.vision-page {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 100px;
+}
+
+.vision-page > .vision {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.vision > h2 {
+    font-size: 2rem;
+}
+.vision > p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width:650px) {
+    .vision-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+
+    .vision-page > .vision {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vision > h2 {
+        font-size: 1.5rem;
+    }
+}.vision > p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .vision-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+    .vision-page > .vision {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .vision > h2 {
+        font-size: 1.5rem;
+    }
+}.vision > p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+.vision-page > .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url("https://i.ibb.co/X3MSqK7/vision.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+} 
+
+@media screen and (max-width:650px) {
+    .vision-page > .image {
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .vision-page > .image {
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+}
+
+.stand-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.stand-page > .stand {
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.stand > h2 {
+    font-size: 3rem;
+}
+.stand > p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width:650px) {
+    .stand-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .stand-page > .stand {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .stand > h2 {
+        font-size: 2rem;
+    }
+    .stand > p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .stand-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .stand-page > .stand {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .stand > h2 {
+        font-size: 2rem;
+    }
+    .stand > p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.stand-page > .image-describe {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+@media screen and (max-width:650px) {
+    .stand-page > .image-describe {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .stand-page > .image-describe {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0px;
+    }
+}
+
+.image-describe > .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.image-describe > .image > img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+@media screen and (max-width:650px) {
+    .image-describe > .image {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .image-describe > .image {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.image-describe > .describe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .image-describe > .describe {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .image-describe > .describe {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+}
+
+.describe > .one-stop {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.one-stop > image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.one-stop > .image > img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.one-stop > .one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2rem;
+}
+.one > h3 {
+    font-size: 1.5rem;
+}
+.one > p {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:650px) {
+    .describe > .one-stop {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+@media screen and (max-width:768px) {
+    .describe > .one-stop {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+
+
+.describe > .two-latest {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.two-latest > image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.two-latest > .image > img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.two-latest > .two {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2rem;
+}
+.two > h3 {
+    font-size: 1.5rem;
+}
+.two > p {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:650px) {
+    .describe > .two-latest {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+@media screen and (max-width:768px) {
+    .describe > .two-latest {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+
+
+
+.describe > .three-customer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.three-customer > image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.three-customer > .image > img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.three-customer > .three {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2rem;
+}
+.three > h3 {
+    font-size: 1.5rem;
+}
+.three > p {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:650px) {
+    .describe > .three-customer {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+@media screen and (max-width:768px) {
+    .describe > .three-customer {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+}
+
+
+.client-page {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.client-page > .client {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client > h2 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:650px) {
+    .client-page {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .client-page > .client {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.client-page > .review-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+@media screen and (max-width:650px) {
+    .client-page > .review-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .client-page > .review-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+}
+
+.review-box > .review {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+}
+.review > .icon {
+    display: flex;
+    font-size: 1rem;
+}
+.icon > .fa-solid {
+    color: orange;
+}
+
+.review > .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 10px 0px;
+}
+.review > h5 {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:650px) {
+    .review-box > .review {
+        width: auto;
+        height: fit-content;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .review-box > .review {
+        width: auto;
+        height: fit-content;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+
+
+.footer-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20%;
+    padding: 10px;
+    background-color: rgba(20, 18, 18, 0.664);
+}
+
+@media screen and (max-width:650px) {
+    .footer-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px;
+    }
+}
+
+
+.footer-card > .hint-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.hint-box > .hint {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.hint:nth-child(1) > p {
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: whitesmoke;
+}
+@media screen and (max-width:650px) {
+    .footer-card > .hint-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+    .hint-box > .hint {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .hint:nth-child(1) > p {
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer-card > .hint-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+    .hint-box > .hint {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .hint:nth-child(1) > p {
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.hint > .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2rem;
+    color: white;
+}
+
+.box > h4 {
+    font-size: 1.3rem;
+}
+.box > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+@media screen and (max-width:650px) {
+    .hint > .box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+    }
+    .box > h4 {
+        font-size: 1.1rem;
+    }
+    .box > a {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .hint > .box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+    }
+    .box > h4 {
+        font-size: 1.1rem;
+    }
+    .box > a {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
