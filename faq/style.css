@@ -2,6 +2,12 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: montserrat;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('/assets/static/Montserrat-Light.ttf');
 }
 
 .nav-container {
@@ -12,9 +18,9 @@
     align-items: center;
     position: fixed;
     z-index: 100;
-    padding: 10px 100px;
+    padding: 5px 70px;
     gap: 20px;
-    background-color: lightgray;
+    background-color: #F1F1FF;
 }
 
 .logo {
@@ -23,15 +29,16 @@
 .logo > a {
     text-decoration: none;
     color: rgb(0, 174, 255);
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .navbar > ul:nth-child(1) {
@@ -44,8 +51,8 @@
 }
 .navbar > ul:nth-child(1) > li > a {
     width: 100%;
-    color: white;
-    font-size: 1.3rem;
+    color: black;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -59,10 +66,19 @@
 }
 
 ul:nth-child(2) > li > a {
-    color: white;
+    color: black;
     font-size: 1rem;
     padding: 5px;
     text-decoration: none;
+}
+ul:nth-child(2) > li:nth-child(2) > a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #A901B8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgray;
 }
 
 .handburger {
@@ -237,7 +253,7 @@ ul:nth-child(2) > li > a {
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    background-color: whitesmoke;
+    background-color: #F1F1FF;
 }
 
 .faq-container > .faq-page {
@@ -270,7 +286,10 @@ ul:nth-child(2) > li > a {
         display: flex;
         flex-direction: column;
         padding: 50px 0px;
-        gap: 10px;
+        gap: 20px;
+    }
+    .faq-page > h2 {
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -287,7 +306,10 @@ ul:nth-child(2) > li > a {
         display: flex;
         flex-direction: column;
         padding: 50px 10px;
-        gap: 10px;
+        gap: 20px;
+    }
+    .faq-page > h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -324,15 +346,15 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
     .ques-answ > h3 {
-        padding: 0px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 0.9rem;
     }
     .ques-answ > p {
-        padding: 0px;
-        font-size: 1.2rem;
+        padding: 10px;
+        font-size: 1rem;
     }
     .faq-container > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -343,15 +365,15 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
     .ques-answ > h3 {
-        padding: 0px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 0.9rem;
     }
     .ques-answ > p {
-        padding: 0px;
-        font-size: 1.2rem;
+        padding: 10px;
+        font-size: 1rem;
     }
     .faq-container > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -369,44 +391,41 @@ ul:nth-child(2) > li > a {
 
 .slide > h3 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
-    animation: mov 20s ease-in-out infinite reverse;
-    transition: 1s ease-in-out;
-
+    animation: mov 15s ease-in-out infinite reverse;
 }
 
 @keyframes mov {
     0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(-50%);  transition: 0.5s ease-in-out;
+        transform: translateX(10%);
     }
     100% {
-        transform: translateX(-100%);  transition: 0.7s ease-in-out;
+        transform: translateX(-100%);
     }
 }
 @media screen and (max-width:650px) {
     .slide {
         height: 100px;
+        height: fit-content;
         display: flex;
         padding: 5px 0px;
-        gap: 20px;
+        gap: 10px;
     }
     .slide > h3 {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 @media screen and (max-width:768px) {
     .slide {
         height: 100px;
+        height: fit-content;
         display: flex;
         padding: 5px 0px;
-        gap: 20px;
+        gap: 10px;
     }
     .slide > h3 {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -421,7 +440,7 @@ ul:nth-child(2) > li > a {
 }
 
 .contact > h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width:650px) {
@@ -434,7 +453,7 @@ ul:nth-child(2) > li > a {
     }
     .contact > h1 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -447,7 +466,7 @@ ul:nth-child(2) > li > a {
     }
     .contact > h1 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -488,8 +507,8 @@ a > form {
   a > form {
     width: 100%;
     display: flex;
-    gap: 10px;
     padding: 5px;
+    gap: 10px;
   }
 } 
 
@@ -515,7 +534,7 @@ form > button {
     font-size: 2rem;
     padding: 20px;
     color: white;
-    background-color: #3E4581;
+    background-color: #A901B8;
     border: none;
     border-radius: 10px;
 }
@@ -523,13 +542,13 @@ form > button {
     form > input {
         width: 100%;
         height: 40px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 5px;
     }
     form > button {
         width: 100%;
         height: 40px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 5px;
     }
 }
@@ -537,13 +556,13 @@ form > button {
     form > input {
         width: 100%;
         height: 40px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 5px;
     }
     form > button {
         width: 100%;
         height: 40px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 5px;
     }
 }
@@ -556,9 +575,8 @@ form > button {
     flex-direction: column;
     gap: 20%;
     padding: 10px;
-    background-color: rgba(20, 18, 18, 0.664);
+    background-color: #FAFBFF;
 }
-
 @media screen and (max-width:650px) {
     .footer-card {
         width: 100%;
@@ -582,25 +600,35 @@ form > button {
 .footer-card > .hint-box {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
-    padding: 10px;
+    padding: 50px;
+    border-bottom: 1px solid black;
 }
-.hint-box > .hint {
-    width: 100%;
+.hint-box > .hint:nth-child(1) {
+    width: 50%;
     height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
     gap: 10px;
 }
+
+.hint:nth-child(1) > a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 .hint:nth-child(1) > p {
-    width: 70%;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    color: whitesmoke;
+    flex-direction: column;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    color: black;
 }
 @media screen and (max-width:650px) {
     .footer-card > .hint-box {
@@ -610,7 +638,7 @@ form > button {
         padding: 0px;
         gap: 10px;
     }
-    .hint-box > .hint {
+    .hint-box > .hint:nth-child(1) {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -620,8 +648,8 @@ form > button {
     }
     .hint:nth-child(1) > p {
         width: 100%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -632,7 +660,7 @@ form > button {
         padding: 0px;
         gap: 10px;
     }
-    .hint-box > .hint {
+    .hint-box > .hint:nth-child(1) {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -642,20 +670,31 @@ form > button {
     }
     .hint:nth-child(1) > p {
         width: 100%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
+}
+
+.hint-box > .hint:nth-child(2) {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 10px;
 }
 
 .hint > .box {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 20px 20px;
     line-height: 2rem;
-    color: white;
+    color: black;
 }
 
 .box > h4 {
@@ -663,15 +702,31 @@ form > button {
 }
 .box > a {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: whitesmoke;
+    font-size: 0.9rem;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.box > a:hover {
+    padding-left: 10px;
+    color: #a901b8;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 footer {
-    font-size: 1.3rem;
-    color: whitesmoke;
+    font-size: 1rem;
+    color: black;
+    padding: 20px;
 }
 @media screen and (max-width:650px) {
+    .hint-box > .hint:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
     .hint > .box {
         width: 100%;
         height: fit-content;
@@ -691,6 +746,14 @@ footer {
     }
 }
 @media screen and (max-width:768px) {
+    .hint-box > .hint:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
     .hint > .box {
         width: 100%;
         height: fit-content;
@@ -705,7 +768,7 @@ footer {
         font-size: 0.8rem;
     }
     footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 10px;
     }
 }

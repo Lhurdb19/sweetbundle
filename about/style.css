@@ -2,6 +2,12 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: montserrat;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('/assets/static/Montserrat-Light.ttf');
 }
 
 .nav-container {
@@ -12,9 +18,9 @@
     align-items: center;
     position: fixed;
     z-index: 100;
-    padding: 10px 100px;
+    padding: 5px 70px;
     gap: 20px;
-    background-color: lightgray;
+    background-color: #F1F1FF;
 }
 
 .logo {
@@ -23,15 +29,16 @@
 .logo > a {
     text-decoration: none;
     color: rgb(0, 174, 255);
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .navbar > ul:nth-child(1) {
@@ -44,8 +51,8 @@
 }
 .navbar > ul:nth-child(1) > li > a {
     width: 100%;
-    color: white;
-    font-size: 1.3rem;
+    color: black;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -59,10 +66,19 @@
 }
 
 ul:nth-child(2) > li > a {
-    color: white;
+    color: black;
     font-size: 1rem;
     padding: 5px;
     text-decoration: none;
+}
+ul:nth-child(2) > li:nth-child(2) > a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #A901B8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgray;
 }
 
 .handburger {
@@ -236,9 +252,9 @@ ul:nth-child(2) > li > a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 70px;
     gap: 200px;
-    background-color: whitesmoke;
+    background-color: #F1F1FF;
 }
 @media screen and (max-width:650px) {
     .about-container {
@@ -282,9 +298,9 @@ ul:nth-child(2) > li > a {
 .about > h2 {
     font-size: 2rem;
 }
-.about > p {
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+.about-page > .about > p {
+    font-size: 1.2rem;
+    line-height: 3rem;
 }
 
 @media screen and (max-width:650px) {
@@ -304,12 +320,12 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
 
-    .about > h2 {
+    .about-page > .about > h2 {
         font-size: 1.3rem;
     }
-    .about > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+    .about-page > .about > p {
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 
@@ -330,12 +346,12 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
 
-    .about > h2 {
+    .about-page > .about > h2 {
         font-size: 1.3rem;
     }
-    .about > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+    .about-page > .about > p {
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 
@@ -369,7 +385,7 @@ ul:nth-child(2) > li > a {
 
 .vision-page {
     width: 100%;
-    height: 450px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,9 +406,9 @@ ul:nth-child(2) > li > a {
 .vision > h2 {
     font-size: 2rem;
 }
-.vision > p {
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+.vision-page > .vision > p {
+    font-size: 1.2rem;
+    line-height: 3rem;
 }
 
 @media screen and (max-width:650px) {
@@ -415,10 +431,11 @@ ul:nth-child(2) > li > a {
     .vision > h2 {
         font-size: 1.5rem;
     }
-}.vision > p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-}
+    .vision-page > .vision > p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    }
+} 
 
 @media screen and (max-width:768px) {
     .vision-page {
@@ -439,9 +456,10 @@ ul:nth-child(2) > li > a {
     .vision > h2 {
         font-size: 1.5rem;
     }
-}.vision > p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    .vision-page > .vision > p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
 }
 
 
@@ -449,7 +467,7 @@ ul:nth-child(2) > li > a {
     width: 100%;
     height: 100%;
     display: flex;
-    background-image: url("https://i.ibb.co/X3MSqK7/vision.png");
+    background-image: url("https://i.ibb.co/SJLkvc1/target-removebg-preview.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -492,10 +510,10 @@ ul:nth-child(2) > li > a {
 }
 
 .stand > h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .stand > p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
 }
 
@@ -513,11 +531,11 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
     .stand > h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .stand > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -534,11 +552,11 @@ ul:nth-child(2) > li > a {
         gap: 10px;
     }
     .stand > h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .stand > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 
@@ -660,10 +678,10 @@ ul:nth-child(2) > li > a {
     line-height: 2rem;
 }
 .one > h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .one > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:650px) {
@@ -714,10 +732,10 @@ ul:nth-child(2) > li > a {
     line-height: 2rem;
 }
 .two > h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .two > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:650px) {
@@ -769,10 +787,10 @@ ul:nth-child(2) > li > a {
     line-height: 2rem;
 }
 .three > h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .three > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:650px) {
@@ -822,6 +840,24 @@ ul:nth-child(2) > li > a {
     .client-page > .client {
         width: 100%;
         text-align: center;
+    }
+    .client > h2 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .client-page {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .client-page > .client {
+        width: 100%;
+        text-align: center;
+    }
+    .client > h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -876,12 +912,12 @@ ul:nth-child(2) > li > a {
 }
 
 .review > .text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     padding: 10px 0px;
 }
 .review > h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width:650px) {
@@ -901,8 +937,6 @@ ul:nth-child(2) > li > a {
     }
 }
 
-
-
 .footer-card {
     width: 100%;
     display: flex;
@@ -911,9 +945,8 @@ ul:nth-child(2) > li > a {
     flex-direction: column;
     gap: 20%;
     padding: 10px;
-    background-color: rgba(20, 18, 18, 0.664);
+    background-color: #FAFBFF;
 }
-
 @media screen and (max-width:650px) {
     .footer-card {
         width: 100%;
@@ -937,25 +970,35 @@ ul:nth-child(2) > li > a {
 .footer-card > .hint-box {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
-    padding: 10px;
+    padding: 50px;
+    border-bottom: 1px solid black;
 }
-.hint-box > .hint {
-    width: 100%;
+.hint-box > .hint:nth-child(1) {
+    width: 50%;
     height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
     gap: 10px;
 }
+
+.hint:nth-child(1) > a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 .hint:nth-child(1) > p {
-    width: 70%;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    color: whitesmoke;
+    flex-direction: column;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    color: black;
 }
 @media screen and (max-width:650px) {
     .footer-card > .hint-box {
@@ -965,7 +1008,7 @@ ul:nth-child(2) > li > a {
         padding: 0px;
         gap: 10px;
     }
-    .hint-box > .hint {
+    .hint-box > .hint:nth-child(1) {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -975,8 +1018,8 @@ ul:nth-child(2) > li > a {
     }
     .hint:nth-child(1) > p {
         width: 100%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -987,7 +1030,7 @@ ul:nth-child(2) > li > a {
         padding: 0px;
         gap: 10px;
     }
-    .hint-box > .hint {
+    .hint-box > .hint:nth-child(1) {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -997,20 +1040,31 @@ ul:nth-child(2) > li > a {
     }
     .hint:nth-child(1) > p {
         width: 100%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
+}
+
+.hint-box > .hint:nth-child(2) {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 10px;
 }
 
 .hint > .box {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 20px 20px;
     line-height: 2rem;
-    color: white;
+    color: black;
 }
 
 .box > h4 {
@@ -1018,15 +1072,31 @@ ul:nth-child(2) > li > a {
 }
 .box > a {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: whitesmoke;
+    font-size: 0.9rem;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.box > a:hover {
+    padding-left: 10px;
+    color: #a901b8;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 footer {
-    font-size: 1.3rem;
-    color: whitesmoke;
+    font-size: 1rem;
+    color: black;
+    padding: 20px;
 }
 @media screen and (max-width:650px) {
+    .hint-box > .hint:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
     .hint > .box {
         width: 100%;
         height: fit-content;
@@ -1046,6 +1116,14 @@ footer {
     }
 }
 @media screen and (max-width:768px) {
+    .hint-box > .hint:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
     .hint > .box {
         width: 100%;
         height: fit-content;
@@ -1060,7 +1138,7 @@ footer {
         font-size: 0.8rem;
     }
     footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 10px;
     }
 }

@@ -2,6 +2,12 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: montserrat;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('/assets/static/Montserrat-Light.ttf');
 }
 
 .nav-container {
@@ -12,9 +18,9 @@
     align-items: center;
     position: fixed;
     z-index: 100;
-    padding: 10px 100px;
+    padding: 5px 70px;
     gap: 20px;
-    background-color: lightgray;
+    background-color: #F1F1FF;
 }
 
 .logo {
@@ -23,15 +29,16 @@
 .logo > a {
     text-decoration: none;
     color: rgb(0, 174, 255);
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .navbar > ul:nth-child(1) {
@@ -44,8 +51,8 @@
 }
 .navbar > ul:nth-child(1) > li > a {
     width: 100%;
-    color: white;
-    font-size: 1.3rem;
+    color: black;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -59,10 +66,36 @@
 }
 
 ul:nth-child(2) > li > a {
-    color: white;
+    color: black;
     font-size: 1rem;
     padding: 5px;
     text-decoration: none;
+}
+ul:nth-child(2) > li:nth-child(2) > a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #A901B8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgray;
+}
+
+.handburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+
+.handburger > .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width:650px) {
@@ -86,6 +119,7 @@ ul:nth-child(2) > li > a {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        flex-direction: column;
         position: absolute;
         padding: 5px;
         gap: 30px;
@@ -219,7 +253,7 @@ ul:nth-child(2) > li > a {
     align-items: center;
     padding: 600px 0px;
     gap: 20px;
-    background-color: whitesmoke;
+    background-color:#F1F1FF;
 }
 @media screen and (max-width:650px) {
     .sign-container {
@@ -410,7 +444,7 @@ form > button {
     height: 50px;
     font-size: 1.4rem;
     padding: 10px;
-    background-color: #3E4581;
+    background-color: #A901B8;
     color: white;
     border-radius: 10px;
 }
