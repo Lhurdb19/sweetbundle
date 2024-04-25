@@ -93,7 +93,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
 .handburger > .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 5px auto;
     transition: all 0.5s ease-in-out;
 }
@@ -123,7 +123,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         position: absolute;
         padding: 5px;
         gap: 30px;
-        top: 0px;
+        top: 50px;
         left: -100%;
         transition: 0.5s ease-in-out;
         background-color: white;
@@ -197,7 +197,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         flex-direction: column;
         padding: 5px;
         gap: 30px;
-        top: 0px;
+        top: 50px;
         left: -100%;
         transition: 0.5s ease-in-out;
         background-color: white;
@@ -1094,7 +1094,7 @@ footer {
         height: fit-content;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         padding: 10px;
     }
     .hint > .box {
@@ -1102,7 +1102,7 @@ footer {
         height: fit-content;
         display: flex;
         flex-direction: column;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
     }
     .box > h4 {
         font-size: 1.1rem;
@@ -1111,7 +1111,7 @@ footer {
         font-size: 0.8rem;
     }
     footer {
-        font-size: 1rem;
+        font-size: 0.7rem;
         padding: 10px;
     }
 }
@@ -1121,7 +1121,7 @@ footer {
         height: fit-content;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         padding: 10px;
     }
     .hint > .box {
@@ -1129,7 +1129,7 @@ footer {
         height: fit-content;
         display: flex;
         flex-direction: column;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
     }
     .box > h4 {
         font-size: 1.1rem;
@@ -1138,7 +1138,7 @@ footer {
         font-size: 0.8rem;
     }
     footer {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 10px;
     }
 }
