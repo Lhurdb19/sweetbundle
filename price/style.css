@@ -103,6 +103,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {
@@ -176,6 +177,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {
@@ -263,8 +265,8 @@ ul:nth-child(2) > li:nth-child(2) > a {
 @media screen and (max-width:650px) {
     .price-container {
         width: 100%;
-        padding: 50px 20px;
-        gap: 20px;
+        padding: 70px 20px;
+        gap: 10px;
     }
     .price-container > h2 {
         font-size: 1.5rem;
@@ -273,8 +275,8 @@ ul:nth-child(2) > li:nth-child(2) > a {
 @media screen and (max-width:768px) {
     .price-container {
         width: 100%;
-        padding:50px 20px;
-        gap: 20px;
+        padding:70px 20px;
+        gap: 10px;
     }
     .price-container > h2 {
         font-size: 1.5rem;
@@ -288,6 +290,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
     align-items: center;
     text-align: center;
     gap: 70px;
+    padding: 20px;
 }
 @media screen and (max-width:650px) {
     .price-container > .data-con {
@@ -310,7 +313,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
     color: white;
     background-color: #000078;
@@ -381,10 +384,12 @@ ul:nth-child(2) > li:nth-child(2) > a {
 .data > .wrapper > .card {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 .data > .wrapper > .card > p {
+    width: 100%;
     font-size: 1rem;
 }
 .data > a {
@@ -398,6 +403,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
     color: white;
     background-color: #a901b8;
     border-radius: 10px;
+    margin-top: 20px;
 }
 @media screen and (max-width:650px) {
     .data > .wrapper {
@@ -479,7 +485,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 50px;
+    padding: 20px;
     gap: 10px;
 }
 
@@ -548,7 +554,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 50px;
+    padding: 20px;
     gap: 10px;
 }
 
@@ -592,7 +598,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 10px;
+        padding: 0px;
     }
     .hint > .box {
         width: 100%;
@@ -600,6 +606,7 @@ footer {
         display: flex;
         flex-direction: column;
         line-height: 1.3rem;
+        padding: 10px;
     }
     .box > h4 {
         font-size: 1.1rem;
@@ -619,7 +626,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 10px;
+        padding: 0px;
     }
     .hint > .box {
         width: 100%;
@@ -627,6 +634,7 @@ footer {
         display: flex;
         flex-direction: column;
         line-height: 1.3rem;
+        padding: 10px;
     }
     .box > h4 {
         font-size: 1.1rem;

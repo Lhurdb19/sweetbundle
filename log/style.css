@@ -103,6 +103,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {
@@ -176,6 +177,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {

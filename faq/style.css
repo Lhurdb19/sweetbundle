@@ -103,6 +103,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {
@@ -176,6 +177,7 @@ ul:nth-child(2) > li:nth-child(2) > a {
         width: 100%;
         height: fit-content;
         padding: 10px;
+        border-bottom: 0.5px solid lightgray;
     }
 
     .nav-container > .logo {
@@ -278,14 +280,14 @@ ul:nth-child(2) > li:nth-child(2) > a {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
+        padding: 70px 10px;
     }
     .faq-container > .faq-page {
         width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        padding: 50px 0px;
+        padding: 0px;
         gap: 20px;
     }
     .faq-page > h2 {
@@ -298,14 +300,14 @@ ul:nth-child(2) > li:nth-child(2) > a {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 0px;
+        padding: 70px 10px;
     }
     .faq-container > .faq-page {
         width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        padding: 50px 10px;
+        padding: 0px;
         gap: 20px;
     }
     .faq-page > h2 {
@@ -452,8 +454,9 @@ ul:nth-child(2) > li:nth-child(2) > a {
         gap: 10px;
     }
     .contact > h1 {
+        width: 90%;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 @media screen and (max-width:768px) {
@@ -465,8 +468,9 @@ ul:nth-child(2) > li:nth-child(2) > a {
         gap: 10px;
     }
     .contact > h1 {
+        width: 90%;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -692,7 +696,7 @@ form > button {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 20px;
     line-height: 2rem;
     color: black;
 }
@@ -725,7 +729,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 10px;
+        padding: 0px;
     }
     .hint > .box {
         width: 100%;
@@ -733,6 +737,7 @@ footer {
         display: flex;
         flex-direction: column;
         line-height: 1.3rem;
+        padding: 10px;
     }
     .box > h4 {
         font-size: 1.1rem;
@@ -752,7 +757,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 10px;
+        padding: 0px;
     }
     .hint > .box {
         width: 100%;
@@ -760,6 +765,7 @@ footer {
         display: flex;
         flex-direction: column;
         line-height: 1.3rem;
+        padding: 10px;
     }
     .box > h4 {
         font-size: 1.1rem;
