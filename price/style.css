@@ -253,637 +253,182 @@ ul:nth-child(2) > li:nth-child(2) > a {
     align-items: center;
     flex-direction: column;
     padding: 100px;
-    gap: 100px;
+    gap: 50px;
     background-color: #F1F1FF;
 }
 
-.price-page {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-.price-page > h2 {
-    font-size: 2rem;
+.price-container > h2 {
+    font-size: 3rem;
 }
 @media screen and (max-width:650px) {
     .price-container {
         width: 100%;
-        flex-direction: column;
         padding: 50px 20px;
         gap: 20px;
     }
-    .price-page {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .price-page > h2 {
+    .price-container > h2 {
         font-size: 1.5rem;
     }
 }
 @media screen and (max-width:768px) {
     .price-container {
         width: 100%;
-        flex-direction: column;
-        padding: 50px 20px;
+        padding:50px 20px;
         gap: 20px;
     }
-    .price-page {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .price-page > h2 {
+    .price-container > h2 {
         font-size: 1.5rem;
     }
 }
 
-.price-page > .data {
+.price-container > .data-con {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    text-align: center;
+    gap: 70px;
 }
-
 @media screen and (max-width:650px) {
-    .price-page > .data {
+    .price-container > .data-con {
         width: 100%;
-        display: flex;
         flex-direction: column;
         gap: 20px;
     }
 }
-
-
-.data > .mtn {
-    width: 100%;
-    height: 750px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    background-color: #000078;
-    border-radius: 10px;
-}
-.mtn > .circle-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-}
-.mtn > .circle-logo > img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    object-fit: cover;
-}
-
-.mtn > .circle-logo > h3 {
-    font-size: 1.1rem;
-    color: white;
-}
-
-.mtn-sub {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    font-size: 1.2rem;
-    color: white;
-}
-.mtn > a {
-    width: 60%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    background-color: #A901B8;
-    border-radius: 10px;
-}
-@media screen and (max-width:650px) {
-    .data > .mtn {
-        width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .mtn > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .mtn > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .mtn > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .mtn-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .mtn > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
-    }
-}
 @media screen and (max-width:768px) {
-    .data > .mtn {
+    .price-container > .data-con {
         width: 100%;
-        height: 550px;
         flex-direction: column;
-        padding: 0px;
-    }
-    .mtn > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .mtn > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .mtn > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .mtn-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .mtn > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
+        gap: 20px;
     }
 }
-
-
-.data > .glo {
+.data-con > .data {
     width: 100%;
-    height: 750px;
+    height: 700PX;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    color: white;
     background-color: #000078;
     border-radius: 10px;
 }
-.glo > .circle-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+.data > .circle-logo {
+    width: 150px;
+    height: 150px;
+    gap: 10px;
 }
-
-.glo > .circle-logo > img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    object-fit: cover;
-}
-
-.glo > .circle-logo > h3 {
-    font-size: 1.1rem;
-    color: white;
-}
-
-.glo-sub {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    font-size: 1.2rem;
-    color: white;
-}
-.glo > a {
-    width: 60%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    background-color: #A901B8;
-    border-radius: 10px;
-}
-
-@media screen and (max-width:650px) {
-    .data > .glo {
-        width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .glo > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .glo > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .glo > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .glo-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .glo > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
-    }
-}
-@media screen and (max-width:768px) {
-    .data > .glo {
-        width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .glo > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .glo > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .glo > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .glo-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .glo > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
-    }
-}
-
-
-
-.data > .airtel {
-    width: 100%;
-    height: 750px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    background-color: #000078;
-    border-radius: 10px;
-}
-
-.airtel > .circle-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-}
-
-.airtel > .circle-logo > img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    object-fit: cover;
-}
-
-.airtel > .circle-logo > h3 {
+.circle-logo > h3 {
     font-size: 1rem;
-    color: white;
 }
-
-
-.airtel-sub {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.airtel > a {
-    width: 60%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    background-color: #A901B8;
-    border-radius: 10px;
-}
-
-@media screen and (max-width:650px) {
-    .data > .airtel {
-        width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .airtel > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .airtel > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .airtel > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .airtel-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .airtel > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
-    }
-}
-@media screen and (max-width:768px) {
-    .data > .airtel {
-        width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .airtel > .circle-logo {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        gap: 10px;
-    }
-    .airtel > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .airtel > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .airtel-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
-        font-size: 0.8rem;
-    }
-    .airtel > a {
-        width: 70%;
-        height: 30px;
-        bottom: 0px;
-    }
-}
-
-.data > .mobile {
-    width: 100%;
-    height: 750px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    background-color: #000078;
-    border-radius: 10px;
-}
-
-.mobile > .circle-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-}
-
-.mobile > .circle-logo > img {
+.data > .circle-logo > img {
     width: 50%;
     height: 50%;
-    display: flex;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.mobile > .circle-logo > h3 {
-    font-size: 1.2rem;
-    color: white;
+@media screen and (max-width:650px) {
+    .data-con > .data {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    .data > .circle-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .circle-logo > h3 {
+        font-size: 0.8rem;
+    }
+    .data > .circle-logo > img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
 }
-
-
-.mobile-sub {
+@media screen and (max-width:768px) {
+    .data-con > .data {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+    .data > .circle-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .data > .circle-logo > img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+.data > .wrapper {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 60px;
-    font-size: 1.2rem;
-    color: white;
+    flex-direction: column;
+    gap: 20px;
 }
-.mobile > a {
-    width: 60%;
-    height: 40px;
+.data > .wrapper > .card {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+.data > .wrapper > .card > p {
+    font-size: 1rem;
+}
+.data > a {
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
     padding: 10px;
+    font-weight: bold;
     color: white;
-    background-color: #A901B8;
+    background-color: #a901b8;
     border-radius: 10px;
 }
-
 @media screen and (max-width:650px) {
-    .data > .mobile {
+    .data > .wrapper {
         width: 100%;
-        height: 550px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .mobile > .circle-logo {
-        width: 100%;
-        height: 20px;
         display: flex;
         flex-direction: column;
-        padding: 50px;
         gap: 10px;
     }
-    .mobile > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .mobile > .circle-logo > h3 {
-        font-size: 1rem;
-        color: white;
-    }
-    .mobile-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
+    .data > .wrapper > .card > p {
         font-size: 0.8rem;
     }
-    .mobile > a {
-        width: 70%;
+    .data > a {
+        width: 100px;
         height: 30px;
-        bottom: 0px;
+        font-size: 0.7rem;
     }
 }
 @media screen and (max-width:768px) {
-    .data > .mobile {
+    .data > .wrapper {
         width: 100%;
-        height: 600px;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .mobile > .circle-logo {
-        width: 100%;
-        height: 20px;
         display: flex;
         flex-direction: column;
-        padding: 50px;
         gap: 10px;
     }
-    .mobile > .circle-logo > img {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        object-fit: cover;
-    }
-
-    .mobile > .circle-logo > h3 {
-        font-size: 0.9rem;
-        color: white;
-    }
-    .mobile-sub {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0px 20px;
-        gap: 60px;
+    .data > .wrapper > .card > p {
         font-size: 0.8rem;
     }
-    .mobile > a {
-        width: 70%;
+    .data > a {
+        width: 100px;
         height: 30px;
-        bottom: 0px;
+        font-size: 0.7rem;
     }
 }
 
